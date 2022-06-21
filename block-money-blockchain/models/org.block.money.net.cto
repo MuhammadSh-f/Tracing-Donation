@@ -1,0 +1,81 @@
+/**
+ * Write your model definitions here
+ */
+
+namespace org.block.money.net
+enum ProjectStatus{
+  o INITIALSTATE
+  o GOVERNMENTREVIEW
+  o READYFORDONATION  
+  o COMPLETED
+}
+
+ asset SendMoney identified by MId{
+  o String MId 
+  o Double Amount 
+  --> Doner donerId
+  --> ProjectPledge pledgeId
+} 
+
+asset ProjectPledge identified by pledgeId {
+  o String pledgeId
+  o String name
+  o String description
+  o Boolean needDonation 
+  o Double fundsRequired
+  o Double fundsReceived
+  o ProjectStatus status
+  --> Charity CharityId 
+  --> SendMoney[] sendMoney optional
+}
+
+abstract participant User {
+  --> ProjectPledge[] projectPledge optional
+}
+
+participant Doner identified by donerId extends User{
+  o String Fname
+  o String Lname 
+  o String donerId
+  o String PhoneNo
+  o String password 
+  o String creditCardNo
+  o Integer nationalId
+  --> SendMoney[] sendMoney optional
+}
+
+participant Charity identified by CharityId extends User {
+  o String CharityName
+  o String Details
+  o String CharityId
+}
+
+participant Governement identified by goverID {
+  o String goverID
+  --> ProjectPledge[] projectPledge optional
+}
+
+transaction CreateProjectPledge {
+  o String pledgeId
+  o String name
+  o String description
+  o Double fundsRequired
+  --> Charity CharityId  
+}
+
+transaction SendPledgeToGovernement {
+  --> Governement goverID
+  --> ProjectPledge pledgeId
+}
+
+transaction ApprovePledgeFromGovernement {
+  --> Governement goverID
+  --> ProjectPledge pledgeId
+}
+
+transaction CreateSendMoney{
+  o String MId 
+  o Double Amount 
+  --> Doner donerId 
+  --> ProjectPledge pledgeId
+}

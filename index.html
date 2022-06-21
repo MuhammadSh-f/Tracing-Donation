@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="./images/WhatsApp Image 2022-04-27 at 3.23.13 AM.jpeg" type="image/png">
+        <title>Block Track</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <style>
+        .img2 { margin-left: -90px; }
+    footer {
+
+    height: 200px;
+
+
+}
+
+        </style>
+    </head>
+<body>
+
+	<!--================ Start Header Menu Area =================-->
+	<header class="header_area">
+        <div class="main_menu">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <a class="navbar-brand logo_h img2" href="./images/"><img src="./images/logo2.jpeg" alt=""  height="100px" style="border-radius:50%;"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav menu_nav ml-auto">
+                                <li class="nav-item"><a class="nav-link" href="index.html"style="color: white">Home</a></li>
+								<li class="nav-item"><a class="nav-link" href="causes.html"style="color: white">Projects</a>
+
+                                <li class="nav-item"><a class="nav-link" href="javascript:Money();"style="color: white">Send Money</a>
+                                <li class="nav-item active"><a class="nav-link" href="./NETELLER » History.html" style="color: white">Transactions</a>
+                                <li class="nav-item active"><a class="nav-link" href="./events.html" style="color: white">events</a>
+                                <li class="nav-item active" ><a id='login' class="nav-link" href="javascript:RemoveEmail();"style="color: white">login</a>
+                            </ul>
+                        </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+	<!--================ End Header Menu Area =================-->
+
+	<!--================ Home Banner Area =================-->
+	<section class="home_banner_area" data-background=""  style="background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url('./images/bg4.jpg');">
+		<div class="banner_inner"  >
+			<div class="container">
+				<div class="banner_content">
+					<p class="upper_text">Life of Giving</p>
+					<h2>There is no exercise better for the heart than reaching down and lifting people up</h2>
+					<a class="primary_btn mr-20" href="javascript:Money();">Donate Now</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Home Banner Area =================-->
+   
+	<!--================ Start Causes Area =================-->
+	<section class="causes_area">
+		<div class="container">
+			<div class="main_title">
+				<h2>Our major causes</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_causes">
+                        <h4>Enhanced Security</h4>
+                        <img src="./images/secure-shield.png" alt="" style="width: 40px;">
+                        <p>
+Every information on the blockchain is hashed cryptographically. In simple terms, the information on the network hides the true nature of the data. For this process, any input data gets through a mathematical algorithm that produces                         </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_causes">
+                        <h4>Consensus</h4>
+                        <img src="./images/consensus.png" alt="" style="width:50px;">
+                        <p>
+Every blockchain thrives because of the consensus algorithms. The architecture is cleverly designed, and consensus algorithms are at the core of this architecture. Every blockchain has a consensus to help the network make decisions.                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_causes">
+                        <h4> Decentralized Technology</h4>
+                        <img src="./images/blockchain.png" alt="" style="width:50px ;">
+                        <p>
+The network is decentralized meaning it doesn’t have any governing authority or a single person looking after the framework. Rather a group of nodes maintains the network making it decentralized.                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<!--================ End Causes Area =================-->
+
+
+
+	<!--================ Start Features Cause section =================-->
+  <section class="features_causes" >
+        <div class="container">
+            <div class="main_title">
+                <h2>Presented projects </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <figure>
+                                <img class="card-img-top img-fluid" id="edu" src="./images/ivan-henao-04rZ7R1fKhY-unsplash.jpg" alt="Card image cap">
+                            </figure>
+                            <div class="card_inner_body">
+                                <h4 class="card-title" id="edu1"></h4>
+                                <b><p class="card-text" id="edu5"></p></b>
+                                <p class="card-text" id="edu2"></p>
+                                <div class="d-flex justify-content-between raised_goal">
+                                    <p id="edu4">Raised: $1500</p>
+                                    <p><span id="edu3"></span></p>
+                                </div>
+                                <div class="d-flex justify-content-between donation align-items-center">
+                                    <a href="javascript:Money();" class="primary_btn">donate</a>
+                                    <p><span class="lnr lnr-heart"></span> 55 Donors</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" >
+                    <div class="card" >
+                        <div class="card-body">
+                            <figure>
+                                <img class="card-img-top img-fluid" id="feed" src="./images/pexels-m-mahbub-a-alahi-9762057.jpg" alt="Card image cap">
+                            </figure>
+                            <div class="card_inner_body">
+                                <h4 class="card-title" id="feed1"></h4>
+                                 <b><p class="card-text" id="feed5"></p></b>
+                                <p class="card-text" id="feed2"></p>
+                                <div class="d-flex justify-content-between raised_goal">
+                                    <p id="feed3">Raised: $5000</p>
+                                    <p><span id="feed4"></span></p>
+                                </div>
+                                <div class="d-flex justify-content-between donation align-items-center">
+                                    <a href="javascript:Money();" class="primary_btn">donate</a>
+                                    <p><span class="lnr lnr-heart"></span> 25 Donors</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <figure>
+                                <img class="card-img-top img-fluid" id="clo" src="./images/pexels-lagos-food-bank-initiative-9090903.jpg" alt="Card image cap">
+                            </figure>
+                            <div class="card_inner_body">
+                                <h4 class="card-titlei" id="clo1"></h4>
+                                <b><p class="card-text" id="clo5"></p></b>
+                                <p class="card-text"id="clo2"></p>
+                                <div class="d-flex justify-content-between raised_goal">
+                                    <p id="clo3">Raised: $9000</p>
+                                    <p><span id="clo4"></span></p>
+                                </div>
+                                <div class="d-flex justify-content-between donation align-items-center">
+                                    <a href="javascript:Money();" class="primary_btn">donate</a>
+                                    <p><span class="lnr lnr-heart"></span> 83 Donors</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </section>
+	<!--================ End Features Cause section =================-->
+
+	<!--================ Start Recent Event Area =================-->
+	<section class="event_area section_gap_custom">
+		<div class="container">
+			<div class="main_title">
+				<h2>Upcoming events</h2>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="single_event">
+						<div class="row align-items-center">
+							<div class="col-lg-6 col-md-6">
+								<figure>
+									<img class="img-fluid w-100" src="./images/pexels-ahmed-akacha-6918511.jpg" alt="">
+									<div class="img-overlay"></div>
+								</figure>
+							</div>
+							<div class="col-lg-6 col-md-6">
+								<div class="content_wrapper">
+									<h3 class="title">
+										<a href="javascript:Events();">Working syrian childreen</a>
+									</h3>
+									<p>
+The conflict in Syria has devastated the lives of a generation of young people. Many of Syria’s children have missed years of their education, with 2.1 million children in Syria currently out of school. 									</p>
+									<div class="d-flex count_time" id="clockdiv1">
+										<div class="mr-25">
+											<h4 class="days">552</h4>
+											<p>Days</p>
+										</div>
+										<div class="mr-25">
+											<h4 class="hours">08</h4>
+											<p>Hours</p>
+										</div>
+										<div class="mr-25">
+											<h4 class="minutes">45</h4>
+											<p>Minutes</p>
+										</div>
+										<div>
+											<h4 class="seconds">30</h4>
+											<p>Seconds</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6">
+					<div class="single_event">
+						<div class="row align-items-center">
+							<div class="col-lg-6 col-md-6">
+								<figure>
+									<img class="img-fluid w-100" src="./images/pexels-pixabay-220365.jpg" alt="">
+									<div class="img-overlay"></div>
+								</figure>
+							</div>
+							<div class="col-lg-6 col-md-6">
+								<div class="content_wrapper">
+									<h3 class="title">
+										<a href="javascript:Events();">Help the homeless</a>
+									</h3>
+									<p>
+Volunteers help our residents along their journey of recovery by tutoring them as they work toward educational or vocational goals, or by teaching a special skill.									</p>
+									<div class="d-flex count_time" id="clockdiv2">
+										<div class="mr-25">
+											<h4 class="days">552</h4>
+											<p>Days</p>
+										</div>
+										<div class="mr-25">
+											<h4 class="hours">08</h4>
+											<p>Hours</p>
+										</div>
+										<div class="mr-25">
+											<h4 class="minutes">45</h4>
+											<p>Minutes</p>
+										</div>
+										<div>
+											<h4 class="seconds">30</h4>
+											<p>Seconds</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6">
+					<div class="single_event">
+						<div class="row align-items-center">
+							<div class="col-lg-6 col-md-6">
+								<figure>
+									<img class="img-fluid w-100" src="./images/pexels-samad-deldar-66346.jpg" alt="">
+									<div class="img-overlay"></div>
+								</figure>
+							</div>
+							<div class="col-lg-6 col-md-6">
+								<div class="content_wrapper">
+									<h3 class="title">
+										<a href="javascript:Events();">keep the clean water</a>
+									</h3>
+									<p>
+Next to air, water is the most important element for the preservation of life. Water is a finite commodity which, if not managed properly, will result in shortages in the near future									</p>
+									<div class="d-flex count_time" id="clockdiv3">
+										<div class="mr-25">
+											<h4 class="days">552</h4>
+											<p>Days</p>
+										</div>
+										<div class="mr-25">
+											<h4 class="hours">08</h4>
+											<p>Hours</p>
+										</div>
+										<div class="mr-25">
+											<h4 class="minutes">45</h4>
+											<p>Minutes</p>
+										</div>
+										<div>
+											<h4 class="seconds">30</h4>
+											<p>Seconds</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6">
+					<div class="single_event">
+						<div class="row align-items-center">
+							<div class="col-lg-6 col-md-6">
+								<figure>
+									<img class="img-fluid w-100" src="./images/pexels-mehmet-turgut-kirkgoz-11722608.jpg" alt="">
+									<div class="img-overlay"></div>
+								</figure>
+							</div>
+							<div class="col-lg-6 col-md-6">
+								<div class="content_wrapper">
+									<h3 class="title">
+										<a href="javascript:Events();">Foods for poor children</a>
+									</h3>
+									<p>
+Hunger is a huge problem that has ramifications far beyond basic survival. Your donation  nutrition program can change the direction of a child’s life.
+									</p>
+									<div class="d-flex count_time" id="clockdiv4">
+										<div class="mr-25">
+											<h4 class="days">552</h4>
+											<p>Days</p>
+										</div>
+										<div class="mr-25">
+											<h4 class="hours">08</h4>
+											<p>Hours</p>
+										</div>
+										<div class="mr-25">
+											<h4 class="minutes">45</h4>
+											<p>Minutes</p>
+										</div>
+										<div>
+											<h4 class="seconds">30</h4>
+											<p>Seconds</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Recent Event Area =================-->
+
+
+	<!--================ Start CTA Area =================-->
+	<div class="cta-area section_gap overlay"  style="background-image:url(./images/pexels-miguel-á-padriñán-255379.jpg); ">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <h1>Become a volunteer</h1>
+                    <p>
+The Youth  Cafe is currently looking for cross-section of volunteers just like you. Be our inspiration today in action and make real change happen. As a volunteer, You can make lifes of a lot of people be better. Our volunteers come from a variety of professional backgrounds but are all catalysts of positive change.                    </p>
+                    <a href="#" class="primary_btn yellow_btn rounded">be with us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!--================ End CTA Area =================-->
+	<!--================ Start Subscribe Area =================-->
+	<div class="container">
+		<div class="subscribe_area">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="d-flex align-items-center">
+						<h1 class="text-white">Do you have a question?</h1>
+						<div id="mc_embed_signup">
+							<form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+								<div class="input-group d-flex flex-row">
+									<input name="EMAIL" placeholder="Your email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+									<button class="ml-10 primary_btn yellow_btn btn sub-btn rounded">SUBSCRIBE</button>
+								</div>
+								<div class="info"></div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--================ End Subscribe Area =================-->
+
+	<!--================ Start footer Area  =================-->
+	<footer>
+        <div class="footer-area ">
+            <div class="container">
+                <div class="row section_gap">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-footer-widget tp_widgets">
+                            <h4 class="footer_title large_title">Our Mission</h4>
+                            <p>
+                                Make a better life for all needed people ,eliminate poverty ,and help every child in the world to have the life he deserve .
+                            </p>
+                            <p>
+                                with us there is no need to be afraid of any wasting of your money and you can track every piaster you Spend
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6">
+                        <div class="single-footer-widget tp_widgets">
+                            <h4 class="footer_title">Quick Links</h4>
+                            <ul class="list">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about-us.html">About</a></li>
+                                <li><a href="javascript:Project();">Projects</a></li>
+                                <li><a href="javascript:Events();">Event</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-footer-widget tp_widgets">
+                            <h4 class="footer_title">Contact Us</h4>
+                            <div class="ml-40">
+                                <p class="sm-head">
+                                    <span class="fa fa-location-arrow"></span>
+                                    Head Office
+                                </p>
+                                <p> 6 October, El Hosary</p>
+
+                                <p class="sm-head">
+                                    <span class="fa fa-phone"></span>
+                                    Phone Number
+                                </p>
+                                <p>
+                                    +123 456 7890 <br>
+                                </p>
+
+                                <p class="sm-head">
+                                    <span class="fa fa-envelope"></span>
+                                    Email
+                                </p>
+                                <p>
+                                    blocktrack35@gmail.com <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row d-flex">
+                    <p class="col-lg-12 footer-text text-center">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+	<!--================ End footer Area  =================-->
+
+
+	<!-- Optional JavaScript -->
+  <script src="js/CheckLogin.js"></script>
+  <script type="text/javascript" src="js/Projects.js"></script>
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="vendors/lightbox/simpleLightbox.min.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<script src="js/countdown.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="js/gmaps.min.js"></script>
+	<script src="js/theme.js"></script>
+</body>
+</html>

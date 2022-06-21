@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sign Up</title>
+
+    <!-- Font Icon -->
+    <link
+      rel="stylesheet"
+      href="fonts/material-icon/css/material-design-iconic-font.min.css"
+    />
+    <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css" />
+    <link
+      rel="icon"
+      href="./images/WhatsApp Image 2022-04-27 at 3.23.13 AM.jpeg"
+      type="image/png"
+    />
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="signup-content">
+          <div class="signup-form" style="color: white">
+            <form
+              method="POST"
+              action="../index.html"
+              class="register-form"
+              id="register-form"
+            >
+              <div class="form-row">
+                <div class="form-group">
+                  <div class="form-input">
+                    <label for="first_name" class="required">First name</label>
+                    <input
+                      id="first_name"
+                      type="text"
+                      name="username"
+                      placeholder="Username"
+                      title="Firstname should be letters. e.g. john"
+                    />
+                  </div>
+                  <div class="form-input">
+                    <label for="last_name" class="required">Last name</label>
+                    <input
+                      type="text"
+                      name="last_name"
+                      id="last_name"
+                      placeholder="lastname"
+                      title="Lastname should be letters. e.g. smith"
+                    />
+                  </div>
+
+                  <div class="form-input">
+                    <label for="email" class="required">Email</label>
+                    <input
+                      type="text"
+                      name="email"
+                      id="email"
+                      title=" Example: username@mail.domain"
+                      placeholder="User name"
+                      required
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    />
+                  </div>
+                  <div class="form-input">
+                    <label for="Password" class="required">Password</label>
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      placeholder="Password"
+                      required
+                      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                      title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-select"></div>
+                  <div class="form-input">
+                    <label for="Creditcardno" class="required"
+                      >Creditcard NO
+                    </label>
+                    <input
+                      type="text"
+                      name="Creditcardno"
+                      id="Creditcardno"
+                      pattern="[0-9]{16}"
+                      title="your credit no must be 16 digits"
+                    />
+                  </div>
+                  <div class="form-input">
+                    <label for="phone_number" class="required"
+                      >Phone number</label
+                    >
+                    <input
+                      type="tel"
+                      name="phone_number"
+                      id="phone_number"
+                      pattern="[0-9]{11}"
+                      title="your phone must be 11 digits"
+                    />
+                  </div>
+                  <div class="form-input">
+                    <label for="National ID" class="required"
+                      >National ID</label
+                    >
+                    <input
+                      type="tel"
+                      name="National ID"
+                      id="National ID"
+                      pattern="[0-9]{11}"
+                      title="your phone must be 13 digits"
+                    />
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="form-submit">
+                <input
+                  type="submit"
+                  value="Submit"
+                  formaction="javascript:signUp();"
+                  class="submit"
+                  id="submit"
+                  name="submit"
+                />
+                <input
+                  type="submit"
+                  value="Reset"
+                  class="submit"
+                  id="reset"
+                  name="reset"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="signup-img">
+            <img src="images/donate.jpg" alt="" />
+            <div class="signup-img-content">
+              <h2 style="padding-top: 100%">Register now</h2>
+              <p>Donate Now !</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/nouislider/nouislider.min.js"></script>
+    <script src="vendor/wnumb/wNumb.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="js/main2.js"></script>
+    <script src="js/Registration.js"></script>
+  </body>
+</html>

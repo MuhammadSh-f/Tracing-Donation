@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Favicon icon -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../blockchain/images/WhatsApp Image 2022-04-27 at 3.23.13 AM.jpeg"
+    />
+
+    <!-- All CSS -->
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="send mony/css/all.min.css" />
+    <!-- 7 stroke icon -->
+    <link rel="stylesheet" href="send mony/css/pe-icon-7-stroke.css" />
+    <!-- Roysha icon -->
+    <link rel="stylesheet" href="send mony/css/roysha-icons.css" />
+
+    <link rel="stylesheet" href="send mony/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="send mony/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="send mony/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="send mony/css/nice-select.css" />
+    <link rel="stylesheet" href="send mony/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="vendors/linericon/style.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css" />
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- custom css if you need -->
+    <link rel="stylesheet" href="send mony/css/custom.css" />
+    <style>
+      .img2 {
+        margin-left: -90px;
+        max-width: 245px;
+      }
+      /* .foo-top{
+                background-image: url(images/footer3.jpg);
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+
+              } */
+    </style>
+
+    <title>Send Money</title>
+  </head>
+  <body class="home-one">
+    <!--================ Start Header Menu Area =================-->
+    <header class="header_area">
+      <div class="banner_inner d-flex align-items-center">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <a class="navbar-brand logo_h img2" href="index.html"
+                ><img
+                  src="../blockchain/images/WhatsApp Image 2022-04-27 at 3.23.13 AM.jpeg"
+                  alt=""
+                  style="border-radius: 50%; width: 50%"
+                  a
+                />
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </a>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div
+                class="collapse navbar-collapse offset"
+                id="navbarSupportedContent"
+              >
+                <ul class="nav navbar-nav menu_nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html" style="color: white"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item active">
+                    <a
+                      class="nav-link"
+                      href="javascript:Project();"
+                      style="color: white"
+                      >Projects</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="javascript:Money();"
+                      style="color: white"
+                      >Send Money</a
+                    >
+                  </li>
+                  <li class="nav-item active">
+                    <a
+                      class="nav-link"
+                      href="javascript:Transaction();"
+                      style="color: white"
+                      >Transactions</a
+                    >
+                  </li>
+                  <li class="nav-item active">
+                    <a
+                      class="nav-link"
+                      href="javascript:Events();"
+                      style="color: white"
+                      >events</a
+                    >
+                  </li>
+                  <li class="nav-item active">
+                    <a
+                      id="login"
+                      class="nav-link"
+                      href="javascript:RemoveEmail();"
+                      style="color: white"
+                      >login</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--================ End Header Menu Area =================-->
+
+    <!-- Banner section start -->
+    <section
+      class="banner v7 home_banner_area"
+      style="
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url(../blockchain/images/back-home-sendmoney.jpeg);
+      "
+    >
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 col-md-12">
+            <form class="currency-form" action="#">
+              <h4>Send Money</h4>
+              <div class="form-field">
+                <label>Project ID</label>
+                <div class="join-field">
+                  <input type="text" name="projectId" id="project" />
+                </div>
+              </div>
+              <div class="form-field">
+                <label>send money</label>
+                <div class="join-field">
+                  <input
+                    type="text"
+                    name="send_amount"
+                    placeholder="$1,000.00"
+                    id="money"
+                  />
+                </div>
+              </div>
+
+              <button
+                type="button"
+                class="btn btn-block btn-filled form-btn"
+                onclick="myFunction();"
+                id="transition"
+              >
+                <span>Continue Transition </span>
+              </button>
+              <span class="accept-terms"
+                >By clicking continue, i am agree with
+                <a href="#">Terms &amp; Policy</a></span
+              >
+            </form>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="ban-content">
+              <h1>Send Money Anytime, You Can Send Money</h1>
+              <p>
+                Be Sure That You are in the Right place and your Money is Save
+                For Who is Really need.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Banner section end -->
+
+    <!-- Payment service section start -->
+    <section class="payment-service bg-offwhite">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="content-box">
+              <h2>Why Send Money with Our Payment Service</h2>
+              <p>
+                cryptocurrency transaction is unique ,which means that it is
+                also easily tracked through the blockchain. the higher level of
+                transparency and public accountability can ease donors' minds
+                and encourage them to give while also reinforcing the charity's
+                reputation for integrity
+              </p>
+              <ul class="list">
+                <li>
+                  <i class="fas fa-check-circle"></i> Global and decentralized
+                </li>
+                <li><i class="fas fa-check-circle"></i> digital agreements</li>
+                <li><i class="fas fa-check-circle"></i> reduced expenses.</li>
+                <li><i class="fas fa-check-circle"></i> reduce taxes</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <figure class="imgBox">
+              <img
+                src="../blockchain/images/shubham-dhage-cHMWByk5vE8-unsplash.jpg"
+                alt=""
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Payment service section end -->
+
+    <!-- Payment system works section start -->
+
+    <!-- Footer strat -->
+    <footer>
+      <div class="footer-area" style="color: white">
+        <div class="container">
+          <div class="row section_gap">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="single-footer-widget tp_widgets">
+                <h4 class="footer_title large_title">Our Mission</h4>
+                <p>
+                  Make a better life for all needed people ,eliminate poverty
+                  ,and help every child in the world to have the life he deserve
+                  .
+                </p>
+                <p>
+                  with us there is no need to be afraid of any wasting of your
+                  money and you can track every piaster you Spend
+                </p>
+              </div>
+            </div>
+            <div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6">
+              <div class="single-footer-widget tp_widgets">
+                <h4 class="footer_title">Quick Links</h4>
+                <ul class="list">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about-us.html">About</a></li>
+                  <li><a href="javascript:Project();">Projects</a></li>
+                  <li><a href="javascript:Events();">Event</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
+              <div class="single-footer-widget tp_widgets">
+                <h4 class="footer_title">Contact Us</h4>
+                <div class="ml-40">
+                  <p class="sm-head">
+                    <span class="fa fa-location-arrow"></span>
+                    Head Office
+                  </p>
+                  <p>6 October, El Hosary</p>
+
+                  <p class="sm-head">
+                    <span class="fa fa-phone"></span>
+                    Phone Number
+                  </p>
+                  <p>+123 456 7890 <br /></p>
+
+                  <p class="sm-head">
+                    <span class="fa fa-envelope"></span>
+                    Email
+                  </p>
+                  <p>blocktrack35@gmail.com <br /></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row d-flex">
+            <p class="col-lg-12 footer-text text-center"></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- JS -->
+    <script src="js/CheckLogin.js"></script>
+    <script type="text/javascript" src="js/SendMoney.js"></script>
+  </body>
+</html>

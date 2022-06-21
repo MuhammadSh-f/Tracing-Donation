@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"
+>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0"
+    />
+
+    <link
+      rel="icon"
+      href="../Track Donation Front/img/logoo.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="./NETELLER » History_files/bootstrap.css" />
+    <link rel="stylesheet" href="./NETELLER » History_files/style.css" />
+    <link
+      rel="stylesheet"
+      href="./NETELLER » History_files/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./NETELLER » History_files/simpleLightbox.css"
+    />
+    <link rel="stylesheet" href="./NETELLER » History_files/nice-select.css" />
+    <link rel="stylesheet" href="./NETELLER » History_files/style(1).css" />
+    <link rel="stylesheet" href="./NETELLER » History_files/responsive.css" />
+    <link
+      href="./NETELLER » History_files/css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="./NETELLER » History_files/css(1)"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="./NETELLER » History_files/common-e175b40fb24abb84a1b5aad332f0a337.css"
+    />
+    <title>Transaction</title>
+
+    <meta name="layout" content="authorized/history" />
+
+    <style>
+      body {
+        background-image: url(images/back-home-sendmoney.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 100vh;
+      }
+      .Transaction {
+        background-color: rgba(1, 1, 1, 0.4);
+      }
+      .unavailable {
+        cursor: default;
+      }
+      .img2 {
+        margin-left: -90px;
+        max-width: 245px;
+      }
+      .table-earning thead th {
+        background: rgba(255, 255, 255, 0.2);
+        font-size: 16px;
+        color: black;
+        vertical-align: middle;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 1;
+        padding: 22px 20px;
+        white-space: nowrap;
+      }
+      #myTable {
+        background: white;
+      }
+      .table-borderless thead th {
+        border: 0;
+      }
+      th {
+        text-align: inherit;
+      }
+      td {
+        display: table-cell;
+        vertical-align: inherit;
+      }
+    </style>
+  </head>
+
+  <body class="authenticated country-eg">
+    <header class="header_area">
+      <div class="main_menu">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <a class="navbar-brand logo_h img2" href="index.html"
+                ><img
+                  src="images/WhatsApp Image 2022-04-27 at 3.23.13 AM.jpeg"
+                  style="width: 50%; border-radius: 50%"
+                  alt=""
+              /></a>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div
+                class="collapse navbar-collapse offset"
+                id="navbarSupportedContent"
+              >
+                <ul class="nav navbar-nav menu_nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html" style="color: white"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="about-us.html"
+                      style="color: white"
+                      >About</a
+                    >
+                  </li>
+                  <li class="nav-item active">
+                    <a
+                      class="nav-link"
+                      href="javascript:Project();"
+                      style="color: white"
+                      >Projects</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="javascript:Money();"
+                      style="color: white"
+                      >Send Money</a
+                    >
+                  </li>
+                  <li class="nav-item active">
+                    <a
+                      class="nav-link"
+                      href="javascript:Transaction();"
+                      style="color: white"
+                      >Transactions</a
+                    >
+                  </li>
+                  <li class="nav-item active">
+                    <a
+                      class="nav-link"
+                      href="javascript:Events();"
+                      style="color: white"
+                      >events</a
+                    >
+                  </li>
+                  <li class="nav-item active">
+                    <a
+                      id="login"
+                      class="nav-link"
+                      href="javascript:RemoveEmail();"
+                      style="color: white"
+                      >login</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="medium-9 columns">
+      <div id="main">
+        <div
+          class="row"
+          style="position: relative; left: 200px; top: 150px"
+          ;=""
+        >
+          <div class="medium-12 columns">
+            <h4 style="color: white">Transaction Report</h4>
+            <div class="panel">
+              <div class="medium-6 large-3 columns">
+                <div class="input-wrapper">
+                  <label>
+                    ENTER YOUR Email :
+                    <input id="Email" type="text" name="id" />
+                  </label>
+                </div>
+              </div>
+              <div class="row end">
+                <div class="medium-6 large-3 columns">
+                  <button
+                    type="button"
+                    class="button input label-align"
+                    onClick="getHistory();"
+                  >
+                    Apply
+                  </button>
+                </div>
+                <button
+                  name="b_print"
+                  type="button"
+                  class="button input label-align"
+                  onClick="printdiv('print');"
+                  value=" Print "
+                >
+                  Print
+                </button>
+              </div>
+            </div>
+
+            <div class="remove-panel-padding end" id="print">
+              <div id="fn-history_wrapper" class="dataTables_wrapper no-footer">
+                <table
+                  id="myTable"
+                  class="table table-borderless table-striped table-earning"
+                >
+                  <thead>
+                    <center>
+                      <tr>
+                        <th>MoneyID</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>ProjectID</th>
+                      </tr>
+                    </center>
+                  </thead>
+                  <tbody
+                    class="transaction-table"
+                    id="transaction-table"
+                  ></tbody>
+                </table>
+              </div>
+            </div>
+            <br />
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/CheckLogin.js"></script>
+    <script type="text/javascript" src="js/Transactions.js"></script>
+  </body>
+</html>
