@@ -11,7 +11,6 @@ function getHistory() {
     // In local files, status is 0 upon success in Mozilla Firefox
     if (xhr.readyState === XMLHttpRequest.DONE) {
       let data = JSON.parse(xhr.responseText);
-      // console.log(data[0].Amount);
       for (let i = 0; i < data.length; i++) {
         transactions.push(data[i]);
       }
