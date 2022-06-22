@@ -32,7 +32,7 @@ xhr.onreadystatechange = () => {
                       <p><span id="project${i}5">Goal:$\ ${project.fundsRequired}</span></p>
                   </div>
                   <div class="d-flex justify-content-between donation align-items-center">
-                      <a href="javascript:Money();" class="primary_btn">donate</a>
+                  <a href="javascript:Money();"  class="primary_btn donate_btn"  data-id="${project.pledgeId}">donate</a>
                       <p><span class="lnr lnr-heart"></span> 55 Donors</p>
                   </div>
 
@@ -42,19 +42,22 @@ xhr.onreadystatechange = () => {
   </div>`;
           })
           .join("");
-        console.log(i);
       }
     }
     console.log(projects);
   }
 };
 xhr.send();
-function displayTransactions() {}
-
-document.querySelectorAll(".donate_btn").forEach((btn) => {
-  btn.addEventListener("click", handleDonateBtn);
-});
-function handleDonateBtn(e) {
-  const btnID = e.target.getAttribute("data-id");
-  localStorage.setItem("donateId", btnID);
+// document.querySelectorAll(".donate_btn").forEach((btn) => {
+//   btn.addEventListener("click", handleDonateBtn);
+// });
+function addIdToLocalStorage() {
+  document.querySelectorAll(".donate_btn").forEach((btn) => {
+    btn.addEventListener("click", handleDonateBtn);
+  });
+  function handleDonateBtn(e) {
+    const btnID = e.target.getAttribute("data-id");
+    localStorage.setItem("donateId", btnID);
+  }
 }
+document.addEventListener("DOMContentLoaded", addIdToLocalStorage);

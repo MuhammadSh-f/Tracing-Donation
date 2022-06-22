@@ -44,11 +44,9 @@ function myFunction() {
   createasset();
   localStorage.removeItem("donateId");
 }
-
 document.addEventListener("DOMContentLoaded", setIdValue);
 function setIdValue() {
   const donateId = localStorage.getItem("donateId");
-  console.log(donateId);
   if (donateId) {
     document.querySelector("#project").value = donateId;
   }
