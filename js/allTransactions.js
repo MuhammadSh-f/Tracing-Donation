@@ -13,25 +13,38 @@ function getHistory() {
       let data = JSON.parse(xhr.responseText);
       for (let i = 0; i < data.length; i++) {
         transactions.push(data[i]);
+        let transactiontype = transactions[i].transactionType.split(".")[4];
+        switch (transactiontype) {
+          case "CreateSendMoney":
+            transactions[i].Participant = "Doner";
+            break;
+          case ("SendPledgeToGovernement", "CreateProjectPledge"):
+            transactions[i].Participant = "Charity Organization";
+            break;
+          case "ApprovePledgeFromGovernement":
+            transactions[i].Participant = "Government";
+            break;
+          default:
+            transactions[i].Participant = "Admin";
+            break;
+        }
+        transactionContainer.innerHTML = transactions
+          .sort()
+          .map((transaction) => {
+            return `
+          <tr>
+            <td>${transaction.Participant}</td>
+            <td>${transaction.transactionType.split(".")[4]}</td>
+            <td>${new Date(transaction.transactionTimestamp)}</td>
+            <td>${transaction.transactionId}</td>
+          </tr>
+          `;
+          })
+          .join("");
       }
       console.log(transactions);
-      // displayTransactions();
     }
   };
   xhr.send();
 }
-function displayTransactions() {
-  transactionContainer.innerHTML = transactions
-    .sort((a, b) => a.pledgeId.split("#")[1] - b.pledgeId.split("#")[1])
-    .map((transaction) => {
-      return `
-      <tr>
-        <td>${transaction.MId}</td>
-        <td>${transaction.Amount}</td>
-        <td>${new Date(transaction.timestamp).toLocaleDateString()}</td>
-        <td>${transaction.pledgeId.split("#")[1]}</td>
-      </tr>
-      `;
-    })
-    .join("");
-}
+function displayTransactions() {}
