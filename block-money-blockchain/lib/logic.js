@@ -30,7 +30,7 @@ function createProjectPledge(txParams) {
       pledge.sendMoney = [];
       return registry.add(pledge);
     })
-    .then(() => getParticipantRegistry(`${NS}.Charity`))
+    .then(() => getParticipantRegistry(`${NS}.CharityOrganization`))
     .then((CharityRegistry) => {
       // save the buyer
       txParams.CharityId.projectPledge.push(pledge);
