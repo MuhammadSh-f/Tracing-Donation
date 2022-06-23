@@ -21,7 +21,7 @@ xhr.onreadystatechange = () => {
       <div class="card">
           <div class="card-body">
               <figure>
-                  <img class="card-img-top img-fluid" id="project${i}" src="./images/3zooz.jpg" alt="Card image cap">
+                  <img class="card-img-top img-fluid" id="project${i}" src="./images/p0.jpg" alt="Card image cap">
               </figure>
               <div class="card_inner_body">
                   <h4 class="card-title" id="project${i}1">${project.name}</h4>
