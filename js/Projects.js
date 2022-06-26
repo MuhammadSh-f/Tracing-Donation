@@ -16,23 +16,33 @@ xhr.onreadystatechange = () => {
         projects.push(data[i]);
         projectCard.innerHTML = projects
           .sort((a, b) => a.pledgeId.split("#")[1] - b.pledgeId.split("#")[1])
-          .map((project) => {
+          .map((project, index) => {
             return `<div class="col-lg-4 col-md-6">
       <div class="card">
           <div class="card-body">
               <figure>
-                  <img class="card-img-top img-fluid" id="project${i}" src="./images/p0.jpg" alt="Card image cap">
+                  <img class="card-img-top img-fluid" id="project${i}" src="./images/project-imgs/${
+              index + 1
+            }.jpg" alt="Card image cap">
               </figure>
               <div class="card_inner_body">
                   <h4 class="card-title" id="project${i}1">${project.name}</h4>
-                  <b><p class="card-text" id="project${i}2">ID: ${project.pledgeId}</p></b>
-                  <p class="card-text" id="project${i}3">${project.description}</p>
+                  <b><p class="card-text" id="project${i}2">ID: ${
+              project.pledgeId
+            }</p></b>
+                  <p class="card-text" id="project${i}3">${
+              project.description
+            }</p>
                   <div class="d-flex justify-content-between raised_goal">
                       <p id="project${i}4">Raised: ${project.fundsReceived}</p>
-                      <p><span id="project${i}5">Goal:$\ ${project.fundsRequired}</span></p>
+                      <p><span id="project${i}5">Goal:$\ ${
+              project.fundsRequired
+            }</span></p>
                   </div>
                   <div class="d-flex justify-content-between donation align-items-center">
-                  <a href="javascript:Money();"  class="primary_btn donate_btn"  data-id="${project.pledgeId}">donate</a>
+                  <a href="javascript:Money();"  class="primary_btn donate_btn"  data-id="${
+                    project.pledgeId
+                  }">donate</a>
                       <p><span class="lnr lnr-heart"></span> 55 Donors</p>
                   </div>
 
