@@ -182,36 +182,56 @@
         >
           <div class="medium-12 columns">
             <h4 style="color: white">Transaction Report</h4>
+            <div class="medium-6 large-3 columns">
+              <div class="input-wrapper">
+                <label>
+                  ENTER Transaction ID
+                  <input id="transactionId" type="text" name="id" />
+                </label>
+              </div>
+            </div>
             <div class="panel">
               <div class="row end">
                 <div class="medium-6 large-3 columns">
                   <button
                     type="button"
                     class="button input label-align"
-                    onClick="getHistory();"
+                    onClick="search();"
                   >
-                    See History
+                    Search
                   </button>
                 </div>
                 <button
-                  name="b_print"
                   type="button"
                   class="button input label-align"
-                  onClick="printdiv('print');"
-                  value=" Print "
+                  onClick="getHistory();"
                 >
-                  Print
+                  See History
                 </button>
               </div>
             </div>
-
             <div class="remove-panel-padding end" id="print">
               <div id="fn-history_wrapper" class="dataTables_wrapper no-footer">
                 <table
                   id="myTable"
                   class="table table-borderless table-striped table-earning"
                 >
-                  <thead>
+                  <thead id="searchTable">
+                    <center></center>
+                  </thead>
+                  <tbody class="transaction-table" id="search-table"></tbody>
+                </table>
+              </div>
+            </div>
+            <br />
+            <br />
+            <div class="remove-panel-padding end" id="print">
+              <div id="fn-history_wrapper" class="dataTables_wrapper no-footer">
+                <table
+                  id="myTable"
+                  class="table table-borderless table-striped table-earning"
+                >
+                  <thead id="mainTable">
                     <center>
                       <tr>
                         <th>Participant</th>
