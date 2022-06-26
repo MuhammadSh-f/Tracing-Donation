@@ -89,6 +89,9 @@
         display: table-cell;
         vertical-align: inherit;
       }
+      .input-wrapper {
+        margin-top: 20px;
+      }
     </style>
   </head>
 
@@ -116,14 +119,6 @@
                       >Home</a
                     >
                   </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="about-us.html"
-                      style="color: white"
-                      >About</a
-                    >
-                  </li>
                   <li class="nav-item active">
                     <a
                       class="nav-link"
@@ -146,6 +141,14 @@
                       href="javascript:Transaction();"
                       style="color: white"
                       >Transactions</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="transactionHistory.html"
+                      style="color: white"
+                      >System History</a
                     >
                   </li>
                   <li class="nav-item active">
@@ -181,13 +184,11 @@
           ;=""
         >
           <div class="medium-12 columns">
-            <h4 style="color: white">Transaction Report</h4>
+            <h4 style="color: white">Transaction History</h4>
             <div class="medium-6 large-3 columns">
               <div class="input-wrapper">
-                <label>
-                  ENTER Transaction ID
-                  <input id="transactionId" type="text" name="id" />
-                </label>
+                <label for="transactionId"> ENTER Transaction ID </label>
+                <input id="transactionId" type="text" name="id" />
               </div>
             </div>
             <div class="panel">
